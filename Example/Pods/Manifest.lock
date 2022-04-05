@@ -1,16 +1,23 @@
 PODS:
-  - DXVideoPlay (0.1.0)
+  - DXVideoPlay (1.0.0):
+    - SnapKit
+  - SnapKit (4.2.0)
 
 DEPENDENCIES:
   - DXVideoPlay (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - SnapKit
 
 EXTERNAL SOURCES:
   DXVideoPlay:
     :path: "../"
 
 SPEC CHECKSUMS:
-  DXVideoPlay: 8c33f0fb35dafe781135c3c93b008b4b6f3f1951
+  DXVideoPlay: bd670c00161676d4b15ccdf7156c259944661bf2
+  SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
 
 PODFILE CHECKSUM: e527a2d300a98b42d1045f6b70585bfd0a61b637
 
-COCOAPODS: 1.11.0
+COCOAPODS: 1.11.3

@@ -7,103 +7,194 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0A80C6FA27FBD6C70019CAD2 /* DXPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A80C6F027FBD6C60019CAD2 /* DXPlayer.swift */; };
-		0A80C6FB27FBD6C70019CAD2 /* DXVideoPlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A80C6F127FBD6C60019CAD2 /* DXVideoPlay.swift */; };
-		0A80C6FC27FBD6C70019CAD2 /* DXPlayerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A80C6F227FBD6C60019CAD2 /* DXPlayerModel.swift */; };
-		0A80C6FD27FBD6C70019CAD2 /* DXPlayerViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A80C6F327FBD6C60019CAD2 /* DXPlayerViewProtocol.swift */; };
-		0A80C6FE27FBD6C70019CAD2 /* DXPlayerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A80C6F427FBD6C60019CAD2 /* DXPlayerExtensions.swift */; };
-		0A80C6FF27FBD6C70019CAD2 /* DXVideoPlay.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A80C6F527FBD6C60019CAD2 /* DXVideoPlay.xib */; };
-		0A80C70027FBD6C70019CAD2 /* DXPlayerControllView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A80C6F627FBD6C70019CAD2 /* DXPlayerControllView.swift */; };
-		0A80C70127FBD6C70019CAD2 /* DXCacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A80C6F727FBD6C70019CAD2 /* DXCacheManager.swift */; };
-		0A80C70227FBD6C70019CAD2 /* DXPlayerControllViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A80C6F827FBD6C70019CAD2 /* DXPlayerControllViewProtocol.swift */; };
-		0A80C70327FBD6C70019CAD2 /* DXPlayerViewControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A80C6F927FBD6C70019CAD2 /* DXPlayerViewControllerProtocol.swift */; };
+		03FF6A2F7492B7171C1596019746968F /* Constraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6E9D9A9A36CAC6827C30D02B1B414B /* Constraint.swift */; };
 		0C3FED8E5CF84A8EB7AAB86E4DA52E22 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		2116EBAD2E233D237653E47A5B606F92 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		2D6AFFE4B5040015341DAC5EBB8DD847 /* Pods-DXVideoPlay_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1884D5A60B084A9299506086385C898A /* Pods-DXVideoPlay_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6234E9EA0A9DCBF3C33B835C0B4D2F33 /* DXVideoPlay-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 13E3511A9245BC7E770548E8C89C4413 /* DXVideoPlay-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0D68190E204870134D83D19F67CF44FB /* DXPlayerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C539D2D206A3182A1FB8086AD0A6086 /* DXPlayerExtensions.swift */; };
+		0F94DFDE60438C4CEF71A0986129CBBA /* ConstraintInsetTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5597D051B6350A61151221E8BEE0D0 /* ConstraintInsetTarget.swift */; };
+		14BED854E14F8E4F62F234F93295C5A4 /* ConstraintMakerFinalizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3146B382C3292E28917B8CF4356923 /* ConstraintMakerFinalizable.swift */; };
+		15AAA5DF5AF71A8F1889141D154D5FF1 /* ConstraintItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB01221055BDABDD47999C671F4A9BD /* ConstraintItem.swift */; };
+		1EBF592AD4EC8F9C28FD87CD6D25F284 /* ConstraintAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F2D0C7209EFA17EFECCB8074F0E9071 /* ConstraintAttributes.swift */; };
+		2945E3C81BA652B418C5044FAB86A326 /* SnapKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 42EDC7C7A525E5D5191CA0B7A731184D /* SnapKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		304F5F4F31E42A9B46861B027048B1A4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		31446A013B882E23E603EA6D7B948D80 /* ConstraintLayoutSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D6B4E640B3D09C454814F36856E2EE /* ConstraintLayoutSupport.swift */; };
+		3B3CEA59ACA3D6568504393A510E3A7B /* ConstraintLayoutGuideDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7413D1E3B3849A8B98CECBCB1E3EA510 /* ConstraintLayoutGuideDSL.swift */; };
+		45416B531D1F1FA11A654D499CDBB2D2 /* SnapKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AB1B5C574EC29B2A222C6281A4A0B3BC /* SnapKit-dummy.m */; };
+		4E4F90027E1C83829C62454365B88DF8 /* ConstraintDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA070155DE459F51A650261C10EA9CB /* ConstraintDSL.swift */; };
+		53D417BB12E6172E901C3A7B59A731CC /* ConstraintInsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C81B0C23EADA502AA9895105ACF93AD /* ConstraintInsets.swift */; };
+		53F45D9AA29E0C5B3A738A542FC39B31 /* ConstraintDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CACD95C459F4D08F9C1E57893F55090 /* ConstraintDescription.swift */; };
+		56FE3ED0B3F012A0DE5AB321616E8A27 /* DXCacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638A844588E2DA367029B83B55FF5430 /* DXCacheManager.swift */; };
+		5B1C68A41297AAB61D439C3C48A41CC6 /* LayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103B8B35502B427E3F46D5237C681DCB /* LayoutConstraint.swift */; };
+		5BA7609848B87041C4AF11B85E71207A /* ConstraintMakerExtendable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7478F64EB1BC7B207D2133307B4B5015 /* ConstraintMakerExtendable.swift */; };
+		608D45B1C7658FF71DF309CBB1CE60D6 /* ConstraintView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A3284DB6C9BFEF88606695BBC11E150 /* ConstraintView.swift */; };
+		6CB9379D9778E172EE906F359B844823 /* ConstraintMakerRelatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E887F5BC85E664CAF1EAD58DB6EF027D /* ConstraintMakerRelatable.swift */; };
+		6EAEDBDBE33CDA1F3E5AC05403462138 /* DXVideoPlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218FBD9218662C48A4848E759434193F /* DXVideoPlay.swift */; };
+		6F698A4AB6D4DF7798D929956DBE57AC /* ConstraintLayoutSupportDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = C89552C29B3090667057D8E56D2C3D81 /* ConstraintLayoutSupportDSL.swift */; };
+		71777571E7C6734AE3A533675CCC83A7 /* DXPlayerViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C915A63148946C51968515EB8BA2548 /* DXPlayerViewProtocol.swift */; };
+		74E67601BD5B8682D43EC296DEDFD716 /* ConstraintConstantTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F10AA484FE3CE9A074FF4CA855D1C7 /* ConstraintConstantTarget.swift */; };
+		75BB40D7EB1867E361E53357BE00643C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		82E4CA85653A6A710BF5C92E2808013E /* ConstraintConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3499D06B7741051669EFC6E6A929A57 /* ConstraintConfig.swift */; };
 		87727D2C09A3E176287F3B417B5D967E /* Pods-DXVideoPlay_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B6B93266EF0A8BCACA904400B25E6249 /* Pods-DXVideoPlay_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9A61A3A4C82A1E9261F24BFD881F656B /* DXVideoPlay-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AB9B8FE1737296E9671DE2BDE98F58E4 /* DXVideoPlay-dummy.m */; };
-		AEB5FE8002E2B5ADD25376248F809B1F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		DDD7C4A88344FC9B5555172C6EC0F621 /* Pods-DXVideoPlay_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 62ECB7D34044767F191CAFDC579284D0 /* Pods-DXVideoPlay_Example-dummy.m */; };
+		87DBA5ECA8EC4B7F19BE55FE62C63237 /* Pods-DXVideoPlay_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1884D5A60B084A9299506086385C898A /* Pods-DXVideoPlay_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8876EF58F073C067681A70DDEBB69D75 /* ConstraintMakerPriortizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3DD21F59E9ABB6CFA8B14FAEE0B52DA /* ConstraintMakerPriortizable.swift */; };
+		89073715BBEAA04310B5D99E3883B2B6 /* DXPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50949C7ED4E387AC90FF2F08FAF16CF0 /* DXPlayer.swift */; };
+		89BD0D11843CAADC49221EEA67A7497F /* DXPlayerControllView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC15B54C2BFF0463672A704643C2F1C /* DXPlayerControllView.swift */; };
+		8B99900F355FCC2073529C5CF7B351E2 /* Typealiases.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D8610217E033F12A628571FD3D1684 /* Typealiases.swift */; };
+		8E312E8AA6FCA23A758079E6A130B3AE /* DXPlayerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F3B51D197AC85BB8050B0D2DA05C4D /* DXPlayerModel.swift */; };
+		975E6BF27EDAC03C0BA4036DD0805A03 /* DXPlayerViewControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5094D59EC1B8C6A0D14EE81C5DBB5C /* DXPlayerViewControllerProtocol.swift */; };
+		98362FE1D0F0887A5FBED9E0879C9618 /* DXVideoPlay-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AD175E7C188A03890B4397F965891E55 /* DXVideoPlay-dummy.m */; };
+		9B63A8124398998CA60698375203F8CC /* ConstraintMultiplierTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51566D0AF41FEBB1DD1BB7CA86B07225 /* ConstraintMultiplierTarget.swift */; };
+		9C908EEA5FF31B4463D925799827F37D /* ConstraintPriorityTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6199B0E33536DD7E23A71C2A1DFA3CB3 /* ConstraintPriorityTarget.swift */; };
+		9CEF1EA30A4CE4959F3F8A27516CE29C /* UILayoutSupport+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DCD15E7A2AFE53263B4335C9B3D9813 /* UILayoutSupport+Extensions.swift */; };
+		BAD842C9D4C35FE9C1F477EF491B3F6B /* ConstraintMakerEditable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766CC484A3E4DD46665D9EF06679B007 /* ConstraintMakerEditable.swift */; };
+		C5DD09948319DDAB4D04480B6984BA19 /* ConstraintRelation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C80000E1CA4369B2E82035A1825982D /* ConstraintRelation.swift */; };
+		CCE457D1DB8488779EA18CB0CBC346E5 /* ConstraintLayoutGuide+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4230A725EDA6C25944C70BFF90CCC3F4 /* ConstraintLayoutGuide+Extensions.swift */; };
+		CF9940046BEB7DCDAA83212F491E7D3F /* ConstraintViewDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C2F3330EB4A39DC3B20B40D8981F66 /* ConstraintViewDSL.swift */; };
+		D1D13A3F1DBEFB6EC7995DE966AC7B79 /* LayoutConstraintItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00EFECCF7F4E78B3021A97741173FC2F /* LayoutConstraintItem.swift */; };
+		E12BAE81D3DCFC807F5FDD6D881A72DB /* ConstraintOffsetTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91102F716DCE9969F79474488AEA2BFD /* ConstraintOffsetTarget.swift */; };
+		E271C31ECB3ADC484E92F99DFD1361BB /* ConstraintMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F8B378A0D395518DE2DD11AE4B6F98 /* ConstraintMaker.swift */; };
+		E2C4FA6B39955766D1A06BBEF6FED5D3 /* ConstraintRelatableTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807F5279ECA1E77BEC4455F1645BF6D7 /* ConstraintRelatableTarget.swift */; };
+		E4A1AC428F34325742CEE66C72CBDFA9 /* Debugging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00BB2CE9C8C7607CDA3E1B49246B760E /* Debugging.swift */; };
+		E672D80A7BA7D83406E7F95E1D0ADCBF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		E76854C7A47420FB816902749AC0C063 /* ConstraintPriority.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F1A25F3C9883F6A0A4428D8AFC44B2 /* ConstraintPriority.swift */; };
+		E801B8E41A7BC288F71E4E2E24BCC02B /* Pods-DXVideoPlay_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 62ECB7D34044767F191CAFDC579284D0 /* Pods-DXVideoPlay_Example-dummy.m */; };
 		EBBBF44AC81FA09CBE73B9BBA091EC33 /* Pods-DXVideoPlay_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AC5B371332F7036395C684B10E56BE24 /* Pods-DXVideoPlay_Tests-dummy.m */; };
+		F1449CEA80FA7EAFE42676B02E57CED5 /* DXPlayerControllViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18528E8165C2D7216D9E1EB50F0C91E /* DXPlayerControllViewProtocol.swift */; };
+		F1F1B1A3DC1433E325A3502056CB066B /* ConstraintView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5975457FA577D667D0257900DF1D4FDD /* ConstraintView+Extensions.swift */; };
+		F396EA1FFB76AF66A06695BB50D13166 /* ConstraintLayoutGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 460FE348E93FFA86EF28B0DE4C0F4A7D /* ConstraintLayoutGuide.swift */; };
+		F8AD094764DB478C3F6A9932163D9471 /* DXVideoPlay-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F09ED531733D357A4A1B7D8DA0A43838 /* DXVideoPlay-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		F05B6A63DD062C6D5026CF55AAE68C9F /* PBXContainerItemProxy */ = {
+		01D024BDA84E4582AAD370472D946AD8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 374F7732E08C198FC88241FDC3043D35;
-			remoteInfo = DXVideoPlay;
+			remoteGlobalIDString = 19622742EBA51E823D6DAE3F8CDBFAD4;
+			remoteInfo = SnapKit;
 		};
-		FC6EF87C0A1800F1A1C0321C858665DB /* PBXContainerItemProxy */ = {
+		32745E72E1A1170A6AE5F375C05B6969 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = EE9EA7DAFF0885CB3905798831F7220C;
 			remoteInfo = "Pods-DXVideoPlay_Example";
 		};
+		71B3A2717D10FF9D06C27F5DFAD6BD27 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 374F7732E08C198FC88241FDC3043D35;
+			remoteInfo = DXVideoPlay;
+		};
+		886469C8E19DD54D0255DB1CD3BE5CC6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 19622742EBA51E823D6DAE3F8CDBFAD4;
+			remoteInfo = SnapKit;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0A80C6F027FBD6C60019CAD2 /* DXPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DXPlayer.swift; sourceTree = "<group>"; };
-		0A80C6F127FBD6C60019CAD2 /* DXVideoPlay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DXVideoPlay.swift; sourceTree = "<group>"; };
-		0A80C6F227FBD6C60019CAD2 /* DXPlayerModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DXPlayerModel.swift; sourceTree = "<group>"; };
-		0A80C6F327FBD6C60019CAD2 /* DXPlayerViewProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DXPlayerViewProtocol.swift; sourceTree = "<group>"; };
-		0A80C6F427FBD6C60019CAD2 /* DXPlayerExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DXPlayerExtensions.swift; sourceTree = "<group>"; };
-		0A80C6F527FBD6C60019CAD2 /* DXVideoPlay.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DXVideoPlay.xib; sourceTree = "<group>"; };
-		0A80C6F627FBD6C70019CAD2 /* DXPlayerControllView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DXPlayerControllView.swift; sourceTree = "<group>"; };
-		0A80C6F727FBD6C70019CAD2 /* DXCacheManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DXCacheManager.swift; sourceTree = "<group>"; };
-		0A80C6F827FBD6C70019CAD2 /* DXPlayerControllViewProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DXPlayerControllViewProtocol.swift; sourceTree = "<group>"; };
-		0A80C6F927FBD6C70019CAD2 /* DXPlayerViewControllerProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DXPlayerViewControllerProtocol.swift; sourceTree = "<group>"; };
-		13E3511A9245BC7E770548E8C89C4413 /* DXVideoPlay-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DXVideoPlay-umbrella.h"; sourceTree = "<group>"; };
-		186897A0AA40F1F7BF261100831A7A37 /* DXVideoPlay.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = DXVideoPlay.modulemap; sourceTree = "<group>"; };
+		00BB2CE9C8C7607CDA3E1B49246B760E /* Debugging.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Debugging.swift; path = Source/Debugging.swift; sourceTree = "<group>"; };
+		00EFECCF7F4E78B3021A97741173FC2F /* LayoutConstraintItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutConstraintItem.swift; path = Source/LayoutConstraintItem.swift; sourceTree = "<group>"; };
+		09C2F3330EB4A39DC3B20B40D8981F66 /* ConstraintViewDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintViewDSL.swift; path = Source/ConstraintViewDSL.swift; sourceTree = "<group>"; };
+		103B8B35502B427E3F46D5237C681DCB /* LayoutConstraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutConstraint.swift; path = Source/LayoutConstraint.swift; sourceTree = "<group>"; };
 		1884D5A60B084A9299506086385C898A /* Pods-DXVideoPlay_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DXVideoPlay_Example-umbrella.h"; sourceTree = "<group>"; };
+		1C539D2D206A3182A1FB8086AD0A6086 /* DXPlayerExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DXPlayerExtensions.swift; path = Classes/DXPlayerExtensions.swift; sourceTree = "<group>"; };
+		1C7817E9B1D2A4A294E5658AFA83004B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		1C81B0C23EADA502AA9895105ACF93AD /* ConstraintInsets.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintInsets.swift; path = Source/ConstraintInsets.swift; sourceTree = "<group>"; };
+		218FBD9218662C48A4848E759434193F /* DXVideoPlay.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DXVideoPlay.swift; path = Classes/DXVideoPlay.swift; sourceTree = "<group>"; };
 		260A478EDD57A4FE1734B24FB14F1BAA /* Pods-DXVideoPlay_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DXVideoPlay_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		2754EF4685C04955E50132A4E56AE8CD /* Pods-DXVideoPlay_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DXVideoPlay_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		29693EC049D6AC1AE94A7B743D01A9AB /* SnapKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SnapKit.debug.xcconfig; sourceTree = "<group>"; };
 		2BF1F7ED9444339FB69E50EBC6D51F58 /* Pods-DXVideoPlay_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DXVideoPlay_Example.release.xcconfig"; sourceTree = "<group>"; };
-		3642882C4ABF637C636E670955C6ADFE /* Pods_DXVideoPlay_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DXVideoPlay_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3ADE490491693D1AEE2A88CE9457EB64 /* DXVideoPlay.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DXVideoPlay.debug.xcconfig; sourceTree = "<group>"; };
-		4BA921CA5C01100D1A9F9D9A868FA2A3 /* DXVideoPlay.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = DXVideoPlay.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		300141053ADF336199386C8B2C624892 /* DXVideoPlay.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DXVideoPlay.debug.xcconfig; sourceTree = "<group>"; };
+		3642882C4ABF637C636E670955C6ADFE /* Pods-DXVideoPlay_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-DXVideoPlay_Example"; path = Pods_DXVideoPlay_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		37F1A25F3C9883F6A0A4428D8AFC44B2 /* ConstraintPriority.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintPriority.swift; path = Source/ConstraintPriority.swift; sourceTree = "<group>"; };
+		3A5094D59EC1B8C6A0D14EE81C5DBB5C /* DXPlayerViewControllerProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DXPlayerViewControllerProtocol.swift; path = Classes/DXPlayerViewControllerProtocol.swift; sourceTree = "<group>"; };
+		3B569D02FFB2C8143A71D4511C970AC4 /* SnapKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SnapKit-prefix.pch"; sourceTree = "<group>"; };
+		4230A725EDA6C25944C70BFF90CCC3F4 /* ConstraintLayoutGuide+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ConstraintLayoutGuide+Extensions.swift"; path = "Source/ConstraintLayoutGuide+Extensions.swift"; sourceTree = "<group>"; };
+		42EDC7C7A525E5D5191CA0B7A731184D /* SnapKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SnapKit-umbrella.h"; sourceTree = "<group>"; };
+		460FE348E93FFA86EF28B0DE4C0F4A7D /* ConstraintLayoutGuide.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutGuide.swift; path = Source/ConstraintLayoutGuide.swift; sourceTree = "<group>"; };
+		46F8B378A0D395518DE2DD11AE4B6F98 /* ConstraintMaker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMaker.swift; path = Source/ConstraintMaker.swift; sourceTree = "<group>"; };
+		4DCD15E7A2AFE53263B4335C9B3D9813 /* UILayoutSupport+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UILayoutSupport+Extensions.swift"; path = "Source/UILayoutSupport+Extensions.swift"; sourceTree = "<group>"; };
 		4EB28608DEA501F5952313381F0D80CD /* Pods-DXVideoPlay_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DXVideoPlay_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		50949C7ED4E387AC90FF2F08FAF16CF0 /* DXPlayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DXPlayer.swift; path = Classes/DXPlayer.swift; sourceTree = "<group>"; };
+		51566D0AF41FEBB1DD1BB7CA86B07225 /* ConstraintMultiplierTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMultiplierTarget.swift; path = Source/ConstraintMultiplierTarget.swift; sourceTree = "<group>"; };
 		56F38CA130A534FD1F43906158E502D4 /* Pods-DXVideoPlay_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DXVideoPlay_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		5975457FA577D667D0257900DF1D4FDD /* ConstraintView+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ConstraintView+Extensions.swift"; path = "Source/ConstraintView+Extensions.swift"; sourceTree = "<group>"; };
+		5EC15B54C2BFF0463672A704643C2F1C /* DXPlayerControllView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DXPlayerControllView.swift; path = Classes/DXPlayerControllView.swift; sourceTree = "<group>"; };
+		602CB7F0CAA8D6123FCCC2197876264E /* DXVideoPlay.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = DXVideoPlay.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		6199B0E33536DD7E23A71C2A1DFA3CB3 /* ConstraintPriorityTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintPriorityTarget.swift; path = Source/ConstraintPriorityTarget.swift; sourceTree = "<group>"; };
 		62ECB7D34044767F191CAFDC579284D0 /* Pods-DXVideoPlay_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DXVideoPlay_Example-dummy.m"; sourceTree = "<group>"; };
-		655797711CD10E58E0181148AFA0CCA0 /* Pods_DXVideoPlay_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DXVideoPlay_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		638A844588E2DA367029B83B55FF5430 /* DXCacheManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DXCacheManager.swift; path = Classes/DXCacheManager.swift; sourceTree = "<group>"; };
+		655797711CD10E58E0181148AFA0CCA0 /* Pods-DXVideoPlay_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-DXVideoPlay_Tests"; path = Pods_DXVideoPlay_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C915A63148946C51968515EB8BA2548 /* DXPlayerViewProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DXPlayerViewProtocol.swift; path = Classes/DXPlayerViewProtocol.swift; sourceTree = "<group>"; };
+		6CACD95C459F4D08F9C1E57893F55090 /* ConstraintDescription.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintDescription.swift; path = Source/ConstraintDescription.swift; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		7413D1E3B3849A8B98CECBCB1E3EA510 /* ConstraintLayoutGuideDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutGuideDSL.swift; path = Source/ConstraintLayoutGuideDSL.swift; sourceTree = "<group>"; };
+		7478F64EB1BC7B207D2133307B4B5015 /* ConstraintMakerExtendable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerExtendable.swift; path = Source/ConstraintMakerExtendable.swift; sourceTree = "<group>"; };
+		766CC484A3E4DD46665D9EF06679B007 /* ConstraintMakerEditable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerEditable.swift; path = Source/ConstraintMakerEditable.swift; sourceTree = "<group>"; };
+		77F3B51D197AC85BB8050B0D2DA05C4D /* DXPlayerModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DXPlayerModel.swift; path = Classes/DXPlayerModel.swift; sourceTree = "<group>"; };
+		7A3284DB6C9BFEF88606695BBC11E150 /* ConstraintView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintView.swift; path = Source/ConstraintView.swift; sourceTree = "<group>"; };
 		8078DF0AAD42278B12B6662E1285973A /* Pods-DXVideoPlay_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DXVideoPlay_Example-frameworks.sh"; sourceTree = "<group>"; };
+		807F5279ECA1E77BEC4455F1645BF6D7 /* ConstraintRelatableTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintRelatableTarget.swift; path = Source/ConstraintRelatableTarget.swift; sourceTree = "<group>"; };
+		848E9BA38AE7A77B37C78B343E836974 /* SnapKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SnapKit-Info.plist"; sourceTree = "<group>"; };
 		859E45849DDA3694BE677E919A410404 /* Pods-DXVideoPlay_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DXVideoPlay_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		916702D7725C505E2D71E63847790280 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		8C80000E1CA4369B2E82035A1825982D /* ConstraintRelation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintRelation.swift; path = Source/ConstraintRelation.swift; sourceTree = "<group>"; };
+		8F2D0C7209EFA17EFECCB8074F0E9071 /* ConstraintAttributes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintAttributes.swift; path = Source/ConstraintAttributes.swift; sourceTree = "<group>"; };
+		91102F716DCE9969F79474488AEA2BFD /* ConstraintOffsetTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintOffsetTarget.swift; path = Source/ConstraintOffsetTarget.swift; sourceTree = "<group>"; };
+		979486118B3E90C08386079D57962701 /* SnapKit */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SnapKit; path = SnapKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B23F6CAF6114CF2FC3CEB8FB2E6EAD1 /* DXVideoPlay-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DXVideoPlay-prefix.pch"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A18528E8165C2D7216D9E1EB50F0C91E /* DXPlayerControllViewProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DXPlayerControllViewProtocol.swift; path = Classes/DXPlayerControllViewProtocol.swift; sourceTree = "<group>"; };
+		A3499D06B7741051669EFC6E6A929A57 /* ConstraintConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintConfig.swift; path = Source/ConstraintConfig.swift; sourceTree = "<group>"; };
 		A480DE80002B8D089713290E7369BAA4 /* Pods-DXVideoPlay_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-DXVideoPlay_Example.modulemap"; sourceTree = "<group>"; };
 		A62BF35E8FCD5302569EBD7DDFC23176 /* Pods-DXVideoPlay_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DXVideoPlay_Tests-Info.plist"; sourceTree = "<group>"; };
-		AB9B8FE1737296E9671DE2BDE98F58E4 /* DXVideoPlay-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DXVideoPlay-dummy.m"; sourceTree = "<group>"; };
+		AB1B5C574EC29B2A222C6281A4A0B3BC /* SnapKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SnapKit-dummy.m"; sourceTree = "<group>"; };
 		AC5B371332F7036395C684B10E56BE24 /* Pods-DXVideoPlay_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DXVideoPlay_Tests-dummy.m"; sourceTree = "<group>"; };
-		AE6C8CA3A98008574EF07574D460208B /* DXVideoPlay-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "DXVideoPlay-Info.plist"; sourceTree = "<group>"; };
+		AD175E7C188A03890B4397F965891E55 /* DXVideoPlay-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DXVideoPlay-dummy.m"; sourceTree = "<group>"; };
+		AD6E9D9A9A36CAC6827C30D02B1B414B /* Constraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constraint.swift; path = Source/Constraint.swift; sourceTree = "<group>"; };
 		B533C1A28D20B2E26BC70A904B39AD02 /* Pods-DXVideoPlay_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DXVideoPlay_Example-Info.plist"; sourceTree = "<group>"; };
 		B6B93266EF0A8BCACA904400B25E6249 /* Pods-DXVideoPlay_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DXVideoPlay_Tests-umbrella.h"; sourceTree = "<group>"; };
-		C0DB2295352EBB7FBB05614F7184F4AA /* DXVideoPlay.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DXVideoPlay.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C3ADA0284B503118524E82390CEDF47C /* DXVideoPlay.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DXVideoPlay.release.xcconfig; sourceTree = "<group>"; };
+		B8BEF98EFE5AA5B53394A45BAC472945 /* SnapKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SnapKit.release.xcconfig; sourceTree = "<group>"; };
+		BAA070155DE459F51A650261C10EA9CB /* ConstraintDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintDSL.swift; path = Source/ConstraintDSL.swift; sourceTree = "<group>"; };
+		C0DB2295352EBB7FBB05614F7184F4AA /* DXVideoPlay */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = DXVideoPlay; path = DXVideoPlay.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C29E3FC1A0F97A49D4E84F0B32C08BBA /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		C837F34872D69CF50776BC0650060A37 /* DXVideoPlay.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = DXVideoPlay.modulemap; sourceTree = "<group>"; };
+		C89552C29B3090667057D8E56D2C3D81 /* ConstraintLayoutSupportDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutSupportDSL.swift; path = Source/ConstraintLayoutSupportDSL.swift; sourceTree = "<group>"; };
+		C8D6B4E640B3D09C454814F36856E2EE /* ConstraintLayoutSupport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutSupport.swift; path = Source/ConstraintLayoutSupport.swift; sourceTree = "<group>"; };
+		D0D8610217E033F12A628571FD3D1684 /* Typealiases.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Typealiases.swift; path = Source/Typealiases.swift; sourceTree = "<group>"; };
+		D3DD21F59E9ABB6CFA8B14FAEE0B52DA /* ConstraintMakerPriortizable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerPriortizable.swift; path = Source/ConstraintMakerPriortizable.swift; sourceTree = "<group>"; };
+		D45CD5634AA15D83FF7FCCE08DE67BE0 /* DXVideoPlay-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "DXVideoPlay-Info.plist"; sourceTree = "<group>"; };
+		DA5597D051B6350A61151221E8BEE0D0 /* ConstraintInsetTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintInsetTarget.swift; path = Source/ConstraintInsetTarget.swift; sourceTree = "<group>"; };
+		DBB01221055BDABDD47999C671F4A9BD /* ConstraintItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintItem.swift; path = Source/ConstraintItem.swift; sourceTree = "<group>"; };
+		E1F10AA484FE3CE9A074FF4CA855D1C7 /* ConstraintConstantTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintConstantTarget.swift; path = Source/ConstraintConstantTarget.swift; sourceTree = "<group>"; };
+		E2070246046EC94EF1396AC30E3FC5E8 /* SnapKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SnapKit.modulemap; sourceTree = "<group>"; };
 		E36CDA6BCEBF999C6799452FC7360380 /* Pods-DXVideoPlay_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-DXVideoPlay_Tests.modulemap"; sourceTree = "<group>"; };
-		F7863C199885487A87A755EA0DAF9880 /* DXVideoPlay-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DXVideoPlay-prefix.pch"; sourceTree = "<group>"; };
+		E61E7165CC085202198AA63A2D973C08 /* DXVideoPlay.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DXVideoPlay.release.xcconfig; sourceTree = "<group>"; };
+		E887F5BC85E664CAF1EAD58DB6EF027D /* ConstraintMakerRelatable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerRelatable.swift; path = Source/ConstraintMakerRelatable.swift; sourceTree = "<group>"; };
+		F09ED531733D357A4A1B7D8DA0A43838 /* DXVideoPlay-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DXVideoPlay-umbrella.h"; sourceTree = "<group>"; };
 		FA0F7234B3092FE9424E406A00E340AD /* Pods-DXVideoPlay_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DXVideoPlay_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		FB3146B382C3292E28917B8CF4356923 /* ConstraintMakerFinalizable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerFinalizable.swift; path = Source/ConstraintMakerFinalizable.swift; sourceTree = "<group>"; };
 		FD570E3DE945137502BACE52678BACD6 /* Pods-DXVideoPlay_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DXVideoPlay_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		FE89C19D73B187FD4374B98C4077B23C /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		2082856DF49C6A5D1D3455727A35765F /* Frameworks */ = {
+		62D750B2FB1E5FE490F8BC73B77D3FF0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2116EBAD2E233D237653E47A5B606F92 /* Foundation.framework in Frameworks */,
+				304F5F4F31E42A9B46861B027048B1A4 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AFE4DAEAA724E44AE15E836A600CE12D /* Frameworks */ = {
+		A4AFA5A9A8507712537277CBFEA3C57F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AEB5FE8002E2B5ADD25376248F809B1F /* Foundation.framework in Frameworks */,
+				75BB40D7EB1867E361E53357BE00643C /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -115,26 +206,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EB0AF2BB242A763ED5BC1C875C49C664 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E672D80A7BA7D83406E7F95E1D0ADCBF /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0A80C6ED27FBD5680019CAD2 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				0A80C6F727FBD6C70019CAD2 /* DXCacheManager.swift */,
-				0A80C6F027FBD6C60019CAD2 /* DXPlayer.swift */,
-				0A80C6F627FBD6C70019CAD2 /* DXPlayerControllView.swift */,
-				0A80C6F827FBD6C70019CAD2 /* DXPlayerControllViewProtocol.swift */,
-				0A80C6F427FBD6C60019CAD2 /* DXPlayerExtensions.swift */,
-				0A80C6F227FBD6C60019CAD2 /* DXPlayerModel.swift */,
-				0A80C6F127FBD6C60019CAD2 /* DXVideoPlay.swift */,
-				0A80C6F527FBD6C60019CAD2 /* DXVideoPlay.xib */,
-				0A80C6F927FBD6C70019CAD2 /* DXPlayerViewControllerProtocol.swift */,
-				0A80C6F327FBD6C60019CAD2 /* DXPlayerViewProtocol.swift */,
-			);
-			path = Classes;
-			sourceTree = "<group>";
-		};
 		21F0660B747499C95A5C5494B3B87278 /* Pods-DXVideoPlay_Tests */ = {
 			isa = PBXGroup;
 			children = (
@@ -168,19 +250,12 @@
 			path = "Target Support Files/Pods-DXVideoPlay_Example";
 			sourceTree = "<group>";
 		};
-		514C9B8DE72DD9FEC1572CBF6454BF75 /* Support Files */ = {
+		427B270BD76A5EF45313FBF29233B96D /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				186897A0AA40F1F7BF261100831A7A37 /* DXVideoPlay.modulemap */,
-				AB9B8FE1737296E9671DE2BDE98F58E4 /* DXVideoPlay-dummy.m */,
-				AE6C8CA3A98008574EF07574D460208B /* DXVideoPlay-Info.plist */,
-				F7863C199885487A87A755EA0DAF9880 /* DXVideoPlay-prefix.pch */,
-				13E3511A9245BC7E770548E8C89C4413 /* DXVideoPlay-umbrella.h */,
-				3ADE490491693D1AEE2A88CE9457EB64 /* DXVideoPlay.debug.xcconfig */,
-				C3ADA0284B503118524E82390CEDF47C /* DXVideoPlay.release.xcconfig */,
+				CA51EB6A266DFF60E2669DC4F20AE5DD /* SnapKit */,
 			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/DXVideoPlay";
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
@@ -191,23 +266,95 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		68B54869F562A4240FB9948FEC3D33FD /* Products */ = {
+		6F279FD100552B7480D0F3E7AE576959 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C0DB2295352EBB7FBB05614F7184F4AA /* DXVideoPlay.framework */,
-				3642882C4ABF637C636E670955C6ADFE /* Pods_DXVideoPlay_Example.framework */,
-				655797711CD10E58E0181148AFA0CCA0 /* Pods_DXVideoPlay_Tests.framework */,
+				C0DB2295352EBB7FBB05614F7184F4AA /* DXVideoPlay */,
+				3642882C4ABF637C636E670955C6ADFE /* Pods-DXVideoPlay_Example */,
+				655797711CD10E58E0181148AFA0CCA0 /* Pods-DXVideoPlay_Tests */,
+				979486118B3E90C08386079D57962701 /* SnapKit */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		87F1EA439E2AE02701752FC89271EF5D /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AE01AEB45B1F6CB7A37A95DCF19844E3 /* DXVideoPlay */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		AE01AEB45B1F6CB7A37A95DCF19844E3 /* DXVideoPlay */ = {
+			isa = PBXGroup;
+			children = (
+				638A844588E2DA367029B83B55FF5430 /* DXCacheManager.swift */,
+				50949C7ED4E387AC90FF2F08FAF16CF0 /* DXPlayer.swift */,
+				5EC15B54C2BFF0463672A704643C2F1C /* DXPlayerControllView.swift */,
+				A18528E8165C2D7216D9E1EB50F0C91E /* DXPlayerControllViewProtocol.swift */,
+				1C539D2D206A3182A1FB8086AD0A6086 /* DXPlayerExtensions.swift */,
+				77F3B51D197AC85BB8050B0D2DA05C4D /* DXPlayerModel.swift */,
+				3A5094D59EC1B8C6A0D14EE81C5DBB5C /* DXPlayerViewControllerProtocol.swift */,
+				6C915A63148946C51968515EB8BA2548 /* DXPlayerViewProtocol.swift */,
+				218FBD9218662C48A4848E759434193F /* DXVideoPlay.swift */,
+				E4BFD2B24C8EECA8CC7A90410E29E4FE /* Pod */,
+				F0EA7B6DA7458DDB4522ED23AAD6D7AA /* Support Files */,
+			);
+			name = DXVideoPlay;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		CA51EB6A266DFF60E2669DC4F20AE5DD /* SnapKit */ = {
+			isa = PBXGroup;
+			children = (
+				AD6E9D9A9A36CAC6827C30D02B1B414B /* Constraint.swift */,
+				8F2D0C7209EFA17EFECCB8074F0E9071 /* ConstraintAttributes.swift */,
+				A3499D06B7741051669EFC6E6A929A57 /* ConstraintConfig.swift */,
+				E1F10AA484FE3CE9A074FF4CA855D1C7 /* ConstraintConstantTarget.swift */,
+				6CACD95C459F4D08F9C1E57893F55090 /* ConstraintDescription.swift */,
+				BAA070155DE459F51A650261C10EA9CB /* ConstraintDSL.swift */,
+				1C81B0C23EADA502AA9895105ACF93AD /* ConstraintInsets.swift */,
+				DA5597D051B6350A61151221E8BEE0D0 /* ConstraintInsetTarget.swift */,
+				DBB01221055BDABDD47999C671F4A9BD /* ConstraintItem.swift */,
+				460FE348E93FFA86EF28B0DE4C0F4A7D /* ConstraintLayoutGuide.swift */,
+				4230A725EDA6C25944C70BFF90CCC3F4 /* ConstraintLayoutGuide+Extensions.swift */,
+				7413D1E3B3849A8B98CECBCB1E3EA510 /* ConstraintLayoutGuideDSL.swift */,
+				C8D6B4E640B3D09C454814F36856E2EE /* ConstraintLayoutSupport.swift */,
+				C89552C29B3090667057D8E56D2C3D81 /* ConstraintLayoutSupportDSL.swift */,
+				46F8B378A0D395518DE2DD11AE4B6F98 /* ConstraintMaker.swift */,
+				766CC484A3E4DD46665D9EF06679B007 /* ConstraintMakerEditable.swift */,
+				7478F64EB1BC7B207D2133307B4B5015 /* ConstraintMakerExtendable.swift */,
+				FB3146B382C3292E28917B8CF4356923 /* ConstraintMakerFinalizable.swift */,
+				D3DD21F59E9ABB6CFA8B14FAEE0B52DA /* ConstraintMakerPriortizable.swift */,
+				E887F5BC85E664CAF1EAD58DB6EF027D /* ConstraintMakerRelatable.swift */,
+				51566D0AF41FEBB1DD1BB7CA86B07225 /* ConstraintMultiplierTarget.swift */,
+				91102F716DCE9969F79474488AEA2BFD /* ConstraintOffsetTarget.swift */,
+				37F1A25F3C9883F6A0A4428D8AFC44B2 /* ConstraintPriority.swift */,
+				6199B0E33536DD7E23A71C2A1DFA3CB3 /* ConstraintPriorityTarget.swift */,
+				807F5279ECA1E77BEC4455F1645BF6D7 /* ConstraintRelatableTarget.swift */,
+				8C80000E1CA4369B2E82035A1825982D /* ConstraintRelation.swift */,
+				7A3284DB6C9BFEF88606695BBC11E150 /* ConstraintView.swift */,
+				5975457FA577D667D0257900DF1D4FDD /* ConstraintView+Extensions.swift */,
+				09C2F3330EB4A39DC3B20B40D8981F66 /* ConstraintViewDSL.swift */,
+				00BB2CE9C8C7607CDA3E1B49246B760E /* Debugging.swift */,
+				103B8B35502B427E3F46D5237C681DCB /* LayoutConstraint.swift */,
+				00EFECCF7F4E78B3021A97741173FC2F /* LayoutConstraintItem.swift */,
+				D0D8610217E033F12A628571FD3D1684 /* Typealiases.swift */,
+				4DCD15E7A2AFE53263B4335C9B3D9813 /* UILayoutSupport+Extensions.swift */,
+				D28E246011041898C1EA6C3AAF01971C /* Support Files */,
+			);
+			name = SnapKit;
+			path = SnapKit;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				FA48BAC8CE527EE491800A10378CF0F1 /* Development Pods */,
+				87F1EA439E2AE02701752FC89271EF5D /* Development Pods */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				68B54869F562A4240FB9948FEC3D33FD /* Products */,
+				427B270BD76A5EF45313FBF29233B96D /* Pods */,
+				6F279FD100552B7480D0F3E7AE576959 /* Products */,
 				EE500268A05836D517932618E8E29395 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
@@ -220,23 +367,27 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		D2D70CC441662CE01AEAF83895A6B0B7 /* DXVideoPlay */ = {
+		D28E246011041898C1EA6C3AAF01971C /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				0A80C6ED27FBD5680019CAD2 /* Classes */,
-				E6E31A67389EA11B8A67F496F77D8523 /* Pod */,
-				514C9B8DE72DD9FEC1572CBF6454BF75 /* Support Files */,
+				E2070246046EC94EF1396AC30E3FC5E8 /* SnapKit.modulemap */,
+				AB1B5C574EC29B2A222C6281A4A0B3BC /* SnapKit-dummy.m */,
+				848E9BA38AE7A77B37C78B343E836974 /* SnapKit-Info.plist */,
+				3B569D02FFB2C8143A71D4511C970AC4 /* SnapKit-prefix.pch */,
+				42EDC7C7A525E5D5191CA0B7A731184D /* SnapKit-umbrella.h */,
+				29693EC049D6AC1AE94A7B743D01A9AB /* SnapKit.debug.xcconfig */,
+				B8BEF98EFE5AA5B53394A45BAC472945 /* SnapKit.release.xcconfig */,
 			);
-			name = DXVideoPlay;
-			path = ../..;
+			name = "Support Files";
+			path = "../Target Support Files/SnapKit";
 			sourceTree = "<group>";
 		};
-		E6E31A67389EA11B8A67F496F77D8523 /* Pod */ = {
+		E4BFD2B24C8EECA8CC7A90410E29E4FE /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				4BA921CA5C01100D1A9F9D9A868FA2A3 /* DXVideoPlay.podspec */,
-				FE89C19D73B187FD4374B98C4077B23C /* LICENSE */,
-				916702D7725C505E2D71E63847790280 /* README.md */,
+				602CB7F0CAA8D6123FCCC2197876264E /* DXVideoPlay.podspec */,
+				C29E3FC1A0F97A49D4E84F0B32C08BBA /* LICENSE */,
+				1C7817E9B1D2A4A294E5658AFA83004B /* README.md */,
 			);
 			name = Pod;
 			sourceTree = "<group>";
@@ -250,25 +401,24 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		FA48BAC8CE527EE491800A10378CF0F1 /* Development Pods */ = {
+		F0EA7B6DA7458DDB4522ED23AAD6D7AA /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				D2D70CC441662CE01AEAF83895A6B0B7 /* DXVideoPlay */,
+				C837F34872D69CF50776BC0650060A37 /* DXVideoPlay.modulemap */,
+				AD175E7C188A03890B4397F965891E55 /* DXVideoPlay-dummy.m */,
+				D45CD5634AA15D83FF7FCCE08DE67BE0 /* DXVideoPlay-Info.plist */,
+				9B23F6CAF6114CF2FC3CEB8FB2E6EAD1 /* DXVideoPlay-prefix.pch */,
+				F09ED531733D357A4A1B7D8DA0A43838 /* DXVideoPlay-umbrella.h */,
+				300141053ADF336199386C8B2C624892 /* DXVideoPlay.debug.xcconfig */,
+				E61E7165CC085202198AA63A2D973C08 /* DXVideoPlay.release.xcconfig */,
 			);
-			name = "Development Pods";
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/DXVideoPlay";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		3AE4C1F0BE15E9A12833903E7E5B6FD2 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6234E9EA0A9DCBF3C33B835C0B4D2F33 /* DXVideoPlay-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		476C30265199655F666489995DBC55E1 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -277,11 +427,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EA551BDB3CEDB9E8FF4D65569F628A4D /* Headers */ = {
+		A340E11D895C82C3EA65605E426B553B /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2D6AFFE4B5040015341DAC5EBB8DD847 /* Pods-DXVideoPlay_Example-umbrella.h in Headers */,
+				2945E3C81BA652B418C5044FAB86A326 /* SnapKit-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BED0492061C79EFBF73905C9298BE999 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87DBA5ECA8EC4B7F19BE55FE62C63237 /* Pods-DXVideoPlay_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2650AC5DC4E27BC89EC7F6A8C5F5EBC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8AD094764DB478C3F6A9932163D9471 /* DXVideoPlay-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,48 +466,68 @@
 			buildRules = (
 			);
 			dependencies = (
-				74E37228DFD7BBF1F751FB572C73C1EC /* PBXTargetDependency */,
+				ADF3B711B1F25CB957F37300BCF9E083 /* PBXTargetDependency */,
 			);
 			name = "Pods-DXVideoPlay_Tests";
 			productName = Pods_DXVideoPlay_Tests;
-			productReference = 655797711CD10E58E0181148AFA0CCA0 /* Pods_DXVideoPlay_Tests.framework */;
+			productReference = 655797711CD10E58E0181148AFA0CCA0 /* Pods-DXVideoPlay_Tests */;
+			productType = "com.apple.product-type.framework";
+		};
+		19622742EBA51E823D6DAE3F8CDBFAD4 /* SnapKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E5AD01ADE167C0F55B34BA76DC47E39A /* Build configuration list for PBXNativeTarget "SnapKit" */;
+			buildPhases = (
+				A340E11D895C82C3EA65605E426B553B /* Headers */,
+				EF4D58CE9F9360D7CACCEBE2D2B1BCAA /* Sources */,
+				62D750B2FB1E5FE490F8BC73B77D3FF0 /* Frameworks */,
+				B032930BB9E7DD8812C868699D400901 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SnapKit;
+			productName = SnapKit;
+			productReference = 979486118B3E90C08386079D57962701 /* SnapKit */;
 			productType = "com.apple.product-type.framework";
 		};
 		374F7732E08C198FC88241FDC3043D35 /* DXVideoPlay */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F0212E93994D0B03F9AA02E0C6BE3D2E /* Build configuration list for PBXNativeTarget "DXVideoPlay" */;
+			buildConfigurationList = A46ADE1A6FCC5F343730264DF7DEBF10 /* Build configuration list for PBXNativeTarget "DXVideoPlay" */;
 			buildPhases = (
-				3AE4C1F0BE15E9A12833903E7E5B6FD2 /* Headers */,
-				7C78734410632930AFEB1F5B92793647 /* Sources */,
-				2082856DF49C6A5D1D3455727A35765F /* Frameworks */,
-				D7E0C2D7FEB7CCF2DA829BC93F353751 /* Resources */,
+				D2650AC5DC4E27BC89EC7F6A8C5F5EBC /* Headers */,
+				C4531D5CB108D94BA2579F82BD2A6DC9 /* Sources */,
+				EB0AF2BB242A763ED5BC1C875C49C664 /* Frameworks */,
+				DF61FCE2B800866B9EBFB4C5088699F8 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				D6A850779280A02907449D75EFF7A756 /* PBXTargetDependency */,
 			);
 			name = DXVideoPlay;
 			productName = DXVideoPlay;
-			productReference = C0DB2295352EBB7FBB05614F7184F4AA /* DXVideoPlay.framework */;
+			productReference = C0DB2295352EBB7FBB05614F7184F4AA /* DXVideoPlay */;
 			productType = "com.apple.product-type.framework";
 		};
 		EE9EA7DAFF0885CB3905798831F7220C /* Pods-DXVideoPlay_Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E35FC91F72A10D5999D67C374229780C /* Build configuration list for PBXNativeTarget "Pods-DXVideoPlay_Example" */;
+			buildConfigurationList = A9986C3FE8E8090F37E718D7268ECDA1 /* Build configuration list for PBXNativeTarget "Pods-DXVideoPlay_Example" */;
 			buildPhases = (
-				EA551BDB3CEDB9E8FF4D65569F628A4D /* Headers */,
-				AA13097936712E769E67D4096F1826EB /* Sources */,
-				AFE4DAEAA724E44AE15E836A600CE12D /* Frameworks */,
-				B114503E7E8F8B7CE3291FB054CEDC2B /* Resources */,
+				BED0492061C79EFBF73905C9298BE999 /* Headers */,
+				3C1A064E0EC3F6B12C7950F85C0C658F /* Sources */,
+				A4AFA5A9A8507712537277CBFEA3C57F /* Frameworks */,
+				C26EE9F4BAB6036C0AABB2EA28C0E200 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				43C75DF863CA94CA56DB0FB3546845F9 /* PBXTargetDependency */,
+				A06DE0DD3F6795C25229F750539FDFDD /* PBXTargetDependency */,
+				F3B26319C9626F19837CCC480747BFD8 /* PBXTargetDependency */,
 			);
 			name = "Pods-DXVideoPlay_Example";
 			productName = Pods_DXVideoPlay_Example;
-			productReference = 3642882C4ABF637C636E670955C6ADFE /* Pods_DXVideoPlay_Example.framework */;
+			productReference = 3642882C4ABF637C636E670955C6ADFE /* Pods-DXVideoPlay_Example */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -352,11 +538,6 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1240;
 				LastUpgradeCheck = 1240;
-				TargetAttributes = {
-					374F7732E08C198FC88241FDC3043D35 = {
-						LastSwiftMigration = 1330;
-					};
-				};
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -367,13 +548,14 @@
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 68B54869F562A4240FB9948FEC3D33FD /* Products */;
+			productRefGroup = 6F279FD100552B7480D0F3E7AE576959 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				374F7732E08C198FC88241FDC3043D35 /* DXVideoPlay */,
 				EE9EA7DAFF0885CB3905798831F7220C /* Pods-DXVideoPlay_Example */,
 				052C0ABEA0785DDD8A05130C127D2278 /* Pods-DXVideoPlay_Tests */,
+				19622742EBA51E823D6DAE3F8CDBFAD4 /* SnapKit */,
 			);
 		};
 /* End PBXProject section */
@@ -386,24 +568,38 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B114503E7E8F8B7CE3291FB054CEDC2B /* Resources */ = {
+		B032930BB9E7DD8812C868699D400901 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D7E0C2D7FEB7CCF2DA829BC93F353751 /* Resources */ = {
+		C26EE9F4BAB6036C0AABB2EA28C0E200 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A80C6FF27FBD6C70019CAD2 /* DXVideoPlay.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF61FCE2B800866B9EBFB4C5088699F8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		3C1A064E0EC3F6B12C7950F85C0C658F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E801B8E41A7BC288F71E4E2E24BCC02B /* Pods-DXVideoPlay_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6321C69F2BD274CA7CF6C5D0D7AB92C3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -412,54 +608,100 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7C78734410632930AFEB1F5B92793647 /* Sources */ = {
+		C4531D5CB108D94BA2579F82BD2A6DC9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A80C6FA27FBD6C70019CAD2 /* DXPlayer.swift in Sources */,
-				9A61A3A4C82A1E9261F24BFD881F656B /* DXVideoPlay-dummy.m in Sources */,
-				0A80C70227FBD6C70019CAD2 /* DXPlayerControllViewProtocol.swift in Sources */,
-				0A80C6FC27FBD6C70019CAD2 /* DXPlayerModel.swift in Sources */,
-				0A80C6FD27FBD6C70019CAD2 /* DXPlayerViewProtocol.swift in Sources */,
-				0A80C70127FBD6C70019CAD2 /* DXCacheManager.swift in Sources */,
-				0A80C70327FBD6C70019CAD2 /* DXPlayerViewControllerProtocol.swift in Sources */,
-				0A80C6FE27FBD6C70019CAD2 /* DXPlayerExtensions.swift in Sources */,
-				0A80C70027FBD6C70019CAD2 /* DXPlayerControllView.swift in Sources */,
-				0A80C6FB27FBD6C70019CAD2 /* DXVideoPlay.swift in Sources */,
+				56FE3ED0B3F012A0DE5AB321616E8A27 /* DXCacheManager.swift in Sources */,
+				89073715BBEAA04310B5D99E3883B2B6 /* DXPlayer.swift in Sources */,
+				89BD0D11843CAADC49221EEA67A7497F /* DXPlayerControllView.swift in Sources */,
+				F1449CEA80FA7EAFE42676B02E57CED5 /* DXPlayerControllViewProtocol.swift in Sources */,
+				0D68190E204870134D83D19F67CF44FB /* DXPlayerExtensions.swift in Sources */,
+				8E312E8AA6FCA23A758079E6A130B3AE /* DXPlayerModel.swift in Sources */,
+				975E6BF27EDAC03C0BA4036DD0805A03 /* DXPlayerViewControllerProtocol.swift in Sources */,
+				71777571E7C6734AE3A533675CCC83A7 /* DXPlayerViewProtocol.swift in Sources */,
+				6EAEDBDBE33CDA1F3E5AC05403462138 /* DXVideoPlay.swift in Sources */,
+				98362FE1D0F0887A5FBED9E0879C9618 /* DXVideoPlay-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AA13097936712E769E67D4096F1826EB /* Sources */ = {
+		EF4D58CE9F9360D7CACCEBE2D2B1BCAA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DDD7C4A88344FC9B5555172C6EC0F621 /* Pods-DXVideoPlay_Example-dummy.m in Sources */,
+				03FF6A2F7492B7171C1596019746968F /* Constraint.swift in Sources */,
+				1EBF592AD4EC8F9C28FD87CD6D25F284 /* ConstraintAttributes.swift in Sources */,
+				82E4CA85653A6A710BF5C92E2808013E /* ConstraintConfig.swift in Sources */,
+				74E67601BD5B8682D43EC296DEDFD716 /* ConstraintConstantTarget.swift in Sources */,
+				53F45D9AA29E0C5B3A738A542FC39B31 /* ConstraintDescription.swift in Sources */,
+				4E4F90027E1C83829C62454365B88DF8 /* ConstraintDSL.swift in Sources */,
+				53D417BB12E6172E901C3A7B59A731CC /* ConstraintInsets.swift in Sources */,
+				0F94DFDE60438C4CEF71A0986129CBBA /* ConstraintInsetTarget.swift in Sources */,
+				15AAA5DF5AF71A8F1889141D154D5FF1 /* ConstraintItem.swift in Sources */,
+				F396EA1FFB76AF66A06695BB50D13166 /* ConstraintLayoutGuide.swift in Sources */,
+				CCE457D1DB8488779EA18CB0CBC346E5 /* ConstraintLayoutGuide+Extensions.swift in Sources */,
+				3B3CEA59ACA3D6568504393A510E3A7B /* ConstraintLayoutGuideDSL.swift in Sources */,
+				31446A013B882E23E603EA6D7B948D80 /* ConstraintLayoutSupport.swift in Sources */,
+				6F698A4AB6D4DF7798D929956DBE57AC /* ConstraintLayoutSupportDSL.swift in Sources */,
+				E271C31ECB3ADC484E92F99DFD1361BB /* ConstraintMaker.swift in Sources */,
+				BAD842C9D4C35FE9C1F477EF491B3F6B /* ConstraintMakerEditable.swift in Sources */,
+				5BA7609848B87041C4AF11B85E71207A /* ConstraintMakerExtendable.swift in Sources */,
+				14BED854E14F8E4F62F234F93295C5A4 /* ConstraintMakerFinalizable.swift in Sources */,
+				8876EF58F073C067681A70DDEBB69D75 /* ConstraintMakerPriortizable.swift in Sources */,
+				6CB9379D9778E172EE906F359B844823 /* ConstraintMakerRelatable.swift in Sources */,
+				9B63A8124398998CA60698375203F8CC /* ConstraintMultiplierTarget.swift in Sources */,
+				E12BAE81D3DCFC807F5FDD6D881A72DB /* ConstraintOffsetTarget.swift in Sources */,
+				E76854C7A47420FB816902749AC0C063 /* ConstraintPriority.swift in Sources */,
+				9C908EEA5FF31B4463D925799827F37D /* ConstraintPriorityTarget.swift in Sources */,
+				E2C4FA6B39955766D1A06BBEF6FED5D3 /* ConstraintRelatableTarget.swift in Sources */,
+				C5DD09948319DDAB4D04480B6984BA19 /* ConstraintRelation.swift in Sources */,
+				608D45B1C7658FF71DF309CBB1CE60D6 /* ConstraintView.swift in Sources */,
+				F1F1B1A3DC1433E325A3502056CB066B /* ConstraintView+Extensions.swift in Sources */,
+				CF9940046BEB7DCDAA83212F491E7D3F /* ConstraintViewDSL.swift in Sources */,
+				E4A1AC428F34325742CEE66C72CBDFA9 /* Debugging.swift in Sources */,
+				5B1C68A41297AAB61D439C3C48A41CC6 /* LayoutConstraint.swift in Sources */,
+				D1D13A3F1DBEFB6EC7995DE966AC7B79 /* LayoutConstraintItem.swift in Sources */,
+				45416B531D1F1FA11A654D499CDBB2D2 /* SnapKit-dummy.m in Sources */,
+				8B99900F355FCC2073529C5CF7B351E2 /* Typealiases.swift in Sources */,
+				9CEF1EA30A4CE4959F3F8A27516CE29C /* UILayoutSupport+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		43C75DF863CA94CA56DB0FB3546845F9 /* PBXTargetDependency */ = {
+		A06DE0DD3F6795C25229F750539FDFDD /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = DXVideoPlay;
 			target = 374F7732E08C198FC88241FDC3043D35 /* DXVideoPlay */;
-			targetProxy = F05B6A63DD062C6D5026CF55AAE68C9F /* PBXContainerItemProxy */;
+			targetProxy = 71B3A2717D10FF9D06C27F5DFAD6BD27 /* PBXContainerItemProxy */;
 		};
-		74E37228DFD7BBF1F751FB572C73C1EC /* PBXTargetDependency */ = {
+		ADF3B711B1F25CB957F37300BCF9E083 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-DXVideoPlay_Example";
 			target = EE9EA7DAFF0885CB3905798831F7220C /* Pods-DXVideoPlay_Example */;
-			targetProxy = FC6EF87C0A1800F1A1C0321C858665DB /* PBXContainerItemProxy */;
+			targetProxy = 32745E72E1A1170A6AE5F375C05B6969 /* PBXContainerItemProxy */;
+		};
+		D6A850779280A02907449D75EFF7A756 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SnapKit;
+			target = 19622742EBA51E823D6DAE3F8CDBFAD4 /* SnapKit */;
+			targetProxy = 886469C8E19DD54D0255DB1CD3BE5CC6 /* PBXContainerItemProxy */;
+		};
+		F3B26319C9626F19837CCC480747BFD8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SnapKit;
+			target = 19622742EBA51E823D6DAE3F8CDBFAD4 /* SnapKit */;
+			targetProxy = 01D024BDA84E4582AAD370472D946AD8 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		0E3293A8DF8587DB60D2813A43CA2B3D /* Debug */ = {
+		19EDE99877536E34E7AE5D8C24768323 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4EB28608DEA501F5952313381F0D80CD /* Pods-DXVideoPlay_Example.debug.xcconfig */;
+			baseConfigurationReference = 300141053ADF336199386C8B2C624892 /* DXVideoPlay.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -468,19 +710,18 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-DXVideoPlay_Example/Pods-DXVideoPlay_Example-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/DXVideoPlay/DXVideoPlay-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DXVideoPlay/DXVideoPlay-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-DXVideoPlay_Example/Pods-DXVideoPlay_Example.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				MODULEMAP_FILE = "Target Support Files/DXVideoPlay/DXVideoPlay.modulemap";
+				PRODUCT_MODULE_NAME = DXVideoPlay;
+				PRODUCT_NAME = DXVideoPlay;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -502,7 +743,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-DXVideoPlay_Tests/Pods-DXVideoPlay_Tests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-DXVideoPlay_Tests/Pods-DXVideoPlay_Tests.modulemap";
@@ -572,7 +813,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -585,7 +826,7 @@
 			};
 			name = Debug;
 		};
-		69CE3428ACA90577B4EA25B9D2D59696 /* Release */ = {
+		34C565BE4AFBDA139A7B8028C0048230 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2BF1F7ED9444339FB69E50EBC6D51F58 /* Pods-DXVideoPlay_Example.release.xcconfig */;
 			buildSettings = {
@@ -600,7 +841,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-DXVideoPlay_Example/Pods-DXVideoPlay_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-DXVideoPlay_Example/Pods-DXVideoPlay_Example.modulemap";
@@ -618,11 +859,11 @@
 			};
 			name = Release;
 		};
-		B7A37B2DE1B7F8E23E4E3512799CC520 /* Release */ = {
+		6A589862FB61515727AEAB35347DA7A6 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C3ADA0284B503118524E82390CEDF47C /* DXVideoPlay.release.xcconfig */;
+			baseConfigurationReference = 4EB28608DEA501F5952313381F0D80CD /* Pods-DXVideoPlay_Example.debug.xcconfig */;
 			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -631,18 +872,79 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/DXVideoPlay/DXVideoPlay-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/DXVideoPlay/DXVideoPlay-Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-DXVideoPlay_Example/Pods-DXVideoPlay_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/DXVideoPlay/DXVideoPlay.modulemap";
-				PRODUCT_MODULE_NAME = DXVideoPlay;
-				PRODUCT_NAME = DXVideoPlay;
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DXVideoPlay_Example/Pods-DXVideoPlay_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7775C421AB093B435B3F1A3E56E5E37D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 29693EC049D6AC1AE94A7B743D01A9AB /* SnapKit.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SnapKit/SnapKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SnapKit/SnapKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SnapKit/SnapKit.modulemap";
+				PRODUCT_MODULE_NAME = SnapKit;
+				PRODUCT_NAME = SnapKit;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		BF86CA9B2C101220E7173C069DE49A36 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B8BEF98EFE5AA5B53394A45BAC472945 /* SnapKit.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SnapKit/SnapKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SnapKit/SnapKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SnapKit/SnapKit.modulemap";
+				PRODUCT_MODULE_NAME = SnapKit;
+				PRODUCT_NAME = SnapKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -700,12 +1002,13 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
@@ -726,7 +1029,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-DXVideoPlay_Tests/Pods-DXVideoPlay_Tests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-DXVideoPlay_Tests/Pods-DXVideoPlay_Tests.modulemap";
@@ -744,11 +1047,11 @@
 			};
 			name = Release;
 		};
-		F50C5038D194439309767C95E7799444 /* Debug */ = {
+		F2D5EA8ADE4EA8CDC840D8C3B4B9BB69 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3ADE490491693D1AEE2A88CE9457EB64 /* DXVideoPlay.debug.xcconfig */;
+			baseConfigurationReference = E61E7165CC085202198AA63A2D973C08 /* DXVideoPlay.release.xcconfig */;
 			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -768,13 +1071,13 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
@@ -797,20 +1100,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E35FC91F72A10D5999D67C374229780C /* Build configuration list for PBXNativeTarget "Pods-DXVideoPlay_Example" */ = {
+		A46ADE1A6FCC5F343730264DF7DEBF10 /* Build configuration list for PBXNativeTarget "DXVideoPlay" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0E3293A8DF8587DB60D2813A43CA2B3D /* Debug */,
-				69CE3428ACA90577B4EA25B9D2D59696 /* Release */,
+				19EDE99877536E34E7AE5D8C24768323 /* Debug */,
+				F2D5EA8ADE4EA8CDC840D8C3B4B9BB69 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F0212E93994D0B03F9AA02E0C6BE3D2E /* Build configuration list for PBXNativeTarget "DXVideoPlay" */ = {
+		A9986C3FE8E8090F37E718D7268ECDA1 /* Build configuration list for PBXNativeTarget "Pods-DXVideoPlay_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F50C5038D194439309767C95E7799444 /* Debug */,
-				B7A37B2DE1B7F8E23E4E3512799CC520 /* Release */,
+				6A589862FB61515727AEAB35347DA7A6 /* Debug */,
+				34C565BE4AFBDA139A7B8028C0048230 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E5AD01ADE167C0F55B34BA76DC47E39A /* Build configuration list for PBXNativeTarget "SnapKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7775C421AB093B435B3F1A3E56E5E37D /* Debug */,
+				BF86CA9B2C101220E7173C069DE49A36 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
