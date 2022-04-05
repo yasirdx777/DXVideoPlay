@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
   s.name             = 'DXVideoPlay'
   s.version          = '1.0.0'
   s.summary          = 'DXVideoPlay It is a complete video player that supports playlist, subtitles..etc'
-  s.swift_version = '5.0'
+  
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -25,11 +25,15 @@ Pod::Spec.new do |s|
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'yasirdx777' => 'yasir.romaya@gmail.com' }
   s.source           = { :git => 'https://github.com/yasirdx777/DXVideoPlay.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.social_media_url = 'https://www.facebook.com/yasirdx777'
 
   s.ios.deployment_target = '11.0'
 
   s.source_files = 'Classes/**/*.swift'
+  
+  s.swift_version = '5.0'
+  
+  s.platforms = {"ios": "11.0"}
   
   # s.resource_bundles = {
   #   'DXVideoPlay' => ['DXVideoPlay/Assets/*.png']
