@@ -1,0 +1,16 @@
+PODS:
+  - DXVideoPlay (0.1.0)
+
+DEPENDENCIES:
+  - DXVideoPlay (from `../`)
+
+EXTERNAL SOURCES:
+  DXVideoPlay:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  DXVideoPlay: 8c33f0fb35dafe781135c3c93b008b4b6f3f1951
+
+PODFILE CHECKSUM: e527a2d300a98b42d1045f6b70585bfd0a61b637
+
+COCOAPODS: 1.11.0

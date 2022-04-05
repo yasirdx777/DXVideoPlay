@@ -1,0 +1,29 @@
+{
+  "name": "DXVideoPlay",
+  "version": "1.0.0",
+  "summary": "DXVideoPlay is a video player with custom layout view with AVPlayerLayer and support for SRT subtitle and playlist.",
+  "swift_versions": "5.0",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/yasirdx777/DXVideoPlay",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "yasirdx777": "yasir.romaya@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/yasirdx777/DXVideoPlay.git",
+    "tag": "1.0.0"
+  },
+  "platforms": {
+    "ios": "11.0"
+  },
+  "source_files": "Classes/**/*.swift",
+  "dependencies": {
+    "SnapKit": [
+      "~> 5.0.0"
+    ]
+  },
+  "swift_version": "5.0"
+}
