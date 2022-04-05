@@ -8,8 +8,9 @@
 
 Pod::Spec.new do |s|
   s.name             = 'DXVideoPlay'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of DXVideoPlay.'
+  s.version          = '1.0.0'
+  s.summary          = 'DXVideoPlay It is a complete video player that supports playlist, subtitles..etc'
+  s.swift_version = '5.0'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -17,20 +18,18 @@ Pod::Spec.new do |s|
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
-  s.description      = <<-DESC
-TODO: Add long description of the pod here.
-                       DESC
+  s.description      = 'DXVideoPlay It is a complete video player that supports playlist, subtitles..etc, And you can integrate it easily with your app by supplying the DXVideoPlay VC with DXPlayerModel struct which you need to set the needed data for playlist asset items then just present DXVideoPlay VC and you are set to go.'
 
-  s.homepage         = 'https://github.com/15304192/DXVideoPlay'
+  s.homepage         = 'https://github.com/yasirdx777/DXVideoPlay'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { '15304192' => 'yasir.nabil@iq.email' }
-  s.source           = { :git => 'https://github.com/15304192/DXVideoPlay.git', :tag => s.version.to_s }
+  s.author           = { 'yasirdx777' => 'yasir.romaya@gmail.com' }
+  s.source           = { :git => 'https://github.com/yasirdx777/DXVideoPlay.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '9.0'
+  s.ios.deployment_target = '11.0'
 
-  s.source_files = 'DXVideoPlay/Classes/**/*'
+  s.source_files = 'Classes/**/*.swift'
   
   # s.resource_bundles = {
   #   'DXVideoPlay' => ['DXVideoPlay/Assets/*.png']
@@ -38,5 +37,5 @@ TODO: Add long description of the pod here.
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.dependency 'SnapKit'
 end

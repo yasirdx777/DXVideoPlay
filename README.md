@@ -1,6 +1,6 @@
 # DXVideoPlay
 
-[![CI Status](https://img.shields.io/travis/15304192/DXVideoPlay.svg?style=flat)](https://travis-ci.org/15304192/DXVideoPlay)
+[![CI Status](https://img.shields.io/travis/yasirdx777/DXVideoPlay.svg?style=flat)](https://travis-ci.org/yasirdx777/DXVideoPlay)
 [![Version](https://img.shields.io/cocoapods/v/DXVideoPlay.svg?style=flat)](https://cocoapods.org/pods/DXVideoPlay)
 [![License](https://img.shields.io/cocoapods/l/DXVideoPlay.svg?style=flat)](https://cocoapods.org/pods/DXVideoPlay)
 [![Platform](https://img.shields.io/cocoapods/p/DXVideoPlay.svg?style=flat)](https://cocoapods.org/pods/DXVideoPlay)
@@ -8,8 +8,6 @@
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
-
-## Requirements
 
 ## Installation
 
@@ -22,7 +20,7 @@ pod 'DXVideoPlay'
 
 ## Author
 
-15304192, yasir.nabil@iq.email
+yasirdx777, yasir.romaya@gmail.com
 
 ## License
 

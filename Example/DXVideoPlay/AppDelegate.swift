@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  DXVideoPlay
 //
-//  Created by 15304192 on 04/05/2022.
-//  Copyright (c) 2022 15304192. All rights reserved.
+//  Created by yasirdx777 on 04/05/2022.
+//  Copyright (c) 2022 yasirdx777. All rights reserved.
 //
 
 import UIKit
