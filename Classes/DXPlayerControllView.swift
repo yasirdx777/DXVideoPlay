@@ -18,7 +18,7 @@ class DXPlayerControllView: UIView, DXPlayerControllViewProtocol {
     
     lazy var playButton : UIButton = {
         let button = UIButton()
-        button.setImage(UIImage(named:"ic_pause") ?? UIImage(), for: .normal)
+        button.setImage(Utils.image(named: "Image"), for: .normal)
         button.addTarget(self, action: #selector(DXPlayerControllView.playeVideo(_:)), for: .touchUpInside)
         return button
     }()
@@ -168,6 +168,8 @@ class DXPlayerControllView: UIView, DXPlayerControllViewProtocol {
     }
     
     func createView(){
+        
+     
         
         
         self.addSubview(videoFlowButtonsStackView)
