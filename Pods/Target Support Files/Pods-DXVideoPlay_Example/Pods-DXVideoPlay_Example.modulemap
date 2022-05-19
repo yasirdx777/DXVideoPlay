@@ -1,0 +1,6 @@
+framework module Pods_DXVideoPlay_Example {
+  umbrella header "Pods-DXVideoPlay_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

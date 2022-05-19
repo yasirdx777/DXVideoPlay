@@ -9,9 +9,9 @@
 import UIKit
 import AVKit
 
-class DXVideoPlay: UIViewController, DXPlayerViewControllerProtocol {
+public class DXVideoPlay: UIViewController, DXPlayerViewControllerProtocol {
     
-    override var prefersStatusBarHidden: Bool { return true }
+    public override var prefersStatusBarHidden: Bool { return true }
     
     var playerViewControll:DXPlayerControllView?
     var playerView:DXPlayer!
@@ -20,7 +20,7 @@ class DXVideoPlay: UIViewController, DXPlayerViewControllerProtocol {
     var playerModel: DXPlayerModel?
     
     
-    init(playerModel:DXPlayerModel) {
+    public init(playerModel:DXPlayerModel) {
         self.playerModel = playerModel
         super.init(nibName: nil, bundle: nil)
     }
@@ -29,7 +29,7 @@ class DXVideoPlay: UIViewController, DXPlayerViewControllerProtocol {
         fatalError("init(coder:) has not been implemented")
     }
     
-    override func viewDidLoad() {
+    public override func viewDidLoad() {
         super.viewDidLoad()
 
         setupPlayerView()
@@ -39,7 +39,7 @@ class DXVideoPlay: UIViewController, DXPlayerViewControllerProtocol {
         if let model = playerModel {
             startPlay(playerModel: model)
         }
-        
+
         createTimer()
         
     }

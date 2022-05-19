@@ -16,27 +16,27 @@ class DXPlayerControllView: UIView, DXPlayerControllViewProtocol {
     weak var player: DXPlayerViewProtocol?
     var playerViewController:DXPlayerViewControllerProtocol?
     
-    let playButton : UIButton = {
+    lazy var playButton : UIButton = {
         let button = UIButton()
-        button.setImage(UIImage(named:"ic_pause")!, for: .normal)
-        button.addTarget(DXPlayerControllView.self, action: #selector(DXPlayerControllView.playeVideo(_:)), for: .touchUpInside)
+        button.setImage(UIImage(named:"ic_pause") ?? UIImage(), for: .normal)
+        button.addTarget(self, action: #selector(DXPlayerControllView.playeVideo(_:)), for: .touchUpInside)
         return button
     }()
     
-    let rewindButton : UIButton = {
+    lazy var rewindButton : UIButton = {
         let button = UIButton()
-        button.setImage(UIImage(named:"ic_rewind")!, for: .normal)
-        button.addTarget(DXPlayerControllView.self, action: #selector(DXPlayerControllView.rewindVideo(_:)), for: .touchUpInside)
+        button.setImage(UIImage(named:"ic_rewind") ?? UIImage(), for: .normal)
+        button.addTarget(self, action: #selector(DXPlayerControllView.rewindVideo(_:)), for: .touchUpInside)
         if locale ?? "en" != "en"{
             button.transform = CGAffineTransform(scaleX: -1.0, y: 1.0)
         }
         return button
     }()
     
-    let forwardButton : UIButton = {
+    lazy var forwardButton : UIButton = {
         let button = UIButton()
-        button.setImage(UIImage(named:"ic_forward")!, for: .normal)
-        button.addTarget(DXPlayerControllView.self, action: #selector(DXPlayerControllView.forwardVideo(_:)), for: .touchUpInside)
+        button.setImage(UIImage(named:"ic_forward") ?? UIImage(), for: .normal)
+        button.addTarget(self, action: #selector(DXPlayerControllView.forwardVideo(_:)), for: .touchUpInside)
         if locale ?? "en" != "en"{
             button.transform = CGAffineTransform(scaleX: -1.0, y: 1.0)
         }
@@ -45,21 +45,21 @@ class DXPlayerControllView: UIView, DXPlayerControllViewProtocol {
     
     /* ----------- */
     
-    let seekSlider : UISlider = {
+    lazy var seekSlider : UISlider = {
         let seekSlider = UISlider()
-        seekSlider.setThumbImage(UIImage(named: "ic_thumbNormal"), for: .normal)
-        seekSlider.setThumbImage(UIImage(named: "ic_thumbHighlighted"), for: .highlighted)
+        seekSlider.setThumbImage(UIImage(named: "ic_thumbNormal") ?? UIImage(), for: .normal)
+        seekSlider.setThumbImage(UIImage(named: "ic_thumbHighlighted") ?? UIImage(), for: .highlighted)
         seekSlider.tintColor = .white
-        seekSlider.addTarget(DXPlayerControllView.self, action: #selector(DXPlayerControllView.seekBarValueChanged(_:)), for: .valueChanged)
+        seekSlider.addTarget(self, action: #selector(DXPlayerControllView.seekBarValueChanged(_:)), for: .valueChanged)
         
-        seekSlider.addTarget(DXPlayerControllView.self, action: #selector(DXPlayerControllView.seekBarTouchDown(_:)), for: .touchDown)
+        seekSlider.addTarget(self, action: #selector(DXPlayerControllView.seekBarTouchDown(_:)), for: .touchDown)
         
-        seekSlider.addTarget(DXPlayerControllView.self, action: #selector(DXPlayerControllView.seekBarTouchCancel(_:)), for: .touchUpInside)
+        seekSlider.addTarget(self, action: #selector(DXPlayerControllView.seekBarTouchCancel(_:)), for: .touchUpInside)
         return seekSlider
     }()
     
     
-    let durationLabel : UILabel = {
+    lazy var durationLabel : UILabel = {
         let durationLabel = UILabel()
         durationLabel.textColor = .white
         durationLabel.textAlignment = .center
@@ -67,7 +67,7 @@ class DXPlayerControllView: UIView, DXPlayerControllViewProtocol {
         return durationLabel
     }()
     
-    let currentTimeLabel : UILabel = {
+    lazy var currentTimeLabel : UILabel = {
         let currentTimeLabel = UILabel()
         currentTimeLabel.textColor = .white
         currentTimeLabel.textAlignment = .center
@@ -78,39 +78,39 @@ class DXPlayerControllView: UIView, DXPlayerControllViewProtocol {
     
     /* ----------- */
     
-    let closeButton : UIButton = {
+    lazy var closeButton : UIButton = {
         let button = UIButton()
-        button.setImage(UIImage(named:"ic_close")!, for: .normal)
-        button.addTarget(DXPlayerControllView.self, action: #selector(DXPlayerControllView.closePlayer(_:)), for: .touchUpInside)
+        button.setImage(UIImage(named:"ic_close") ?? UIImage(), for: .normal)
+        button.addTarget(self, action: #selector(DXPlayerControllView.closePlayer(_:)), for: .touchUpInside)
         return button
     }()
     
-    let qaulityButton : UIButton = {
+    lazy var qaulityButton : UIButton = {
         let button = UIButton()
-        button.setImage(UIImage(named:"ic_videoQuality")!, for: .normal)
-        button.addTarget(DXPlayerControllView.self, action: #selector(DXPlayerControllView.showQaulities(_:)), for: .touchUpInside)
+        button.setImage(UIImage(named:"ic_videoQuality") ?? UIImage(), for: .normal)
+        button.addTarget(self, action: #selector(DXPlayerControllView.showQaulities(_:)), for: .touchUpInside)
         return button
     }()
     
-    let subtitleButton : UIButton = {
+    lazy var subtitleButton : UIButton = {
         let button = UIButton()
-        button.setImage(UIImage(named:"ic_subtitle")!, for: .normal)
-        button.addTarget(DXPlayerControllView.self, action: #selector(DXPlayerControllView.showSubtitle(_:)), for: .touchUpInside)
+        button.setImage(UIImage(named:"ic_subtitle") ?? UIImage(), for: .normal)
+        button.addTarget(self, action: #selector(DXPlayerControllView.showSubtitle(_:)), for: .touchUpInside)
         return button
     }()
     
     
-    let queueButton : UIButton = {
+    lazy var queueButton : UIButton = {
         let button = UIButton()
-        button.setImage(UIImage(named:"ic_queue")!, for: .normal)
-        button.addTarget(DXPlayerControllView.self, action: #selector(DXPlayerControllView.showQueue(_:)), for: .touchUpInside)
+        button.setImage(UIImage(named:"ic_queue") ?? UIImage(), for: .normal)
+        button.addTarget(self, action: #selector(DXPlayerControllView.showQueue(_:)), for: .touchUpInside)
         return button
     }()
     
-    let expandButton : UIButton = {
+    lazy var expandButton : UIButton = {
         let button = UIButton()
-        button.setImage(UIImage(named:"ic_expand")!, for: .normal)
-        button.addTarget(DXPlayerControllView.self, action: #selector(DXPlayerControllView.showExpand(_:)), for: .touchUpInside)
+        button.setImage(UIImage(named:"ic_expand") ?? UIImage(), for: .normal)
+        button.addTarget(self, action: #selector(DXPlayerControllView.showExpand(_:)), for: .touchUpInside)
         return button
     }()
     
@@ -125,7 +125,7 @@ class DXPlayerControllView: UIView, DXPlayerControllViewProtocol {
     
     /* ----------- */
     
-    let videoFlowButtonsStackView : UIStackView = {
+    lazy var videoFlowButtonsStackView : UIStackView = {
         let stackView = UIStackView()
         stackView.axis = .horizontal
         stackView.alignment = .center
@@ -134,7 +134,7 @@ class DXPlayerControllView: UIView, DXPlayerControllViewProtocol {
         return stackView
     }()
     
-    let timeStackView : UIStackView = {
+    lazy var timeStackView : UIStackView = {
         let stackView = UIStackView()
         stackView.axis = .horizontal
         stackView.alignment = .fill
@@ -143,7 +143,7 @@ class DXPlayerControllView: UIView, DXPlayerControllViewProtocol {
         return stackView
     }()
     
-    let controllsButtonsStackView : UIStackView = {
+    lazy var controllsButtonsStackView : UIStackView = {
         let stackView = UIStackView()
         stackView.axis = .vertical
         stackView.alignment = .center
@@ -302,9 +302,9 @@ class DXPlayerControllView: UIView, DXPlayerControllViewProtocol {
     
     func changePlayStatus(isPlaying: Bool) {
         if isPlaying {
-            playButton.setImage(UIImage(named:"ic_pause")!, for: .normal)
+            playButton.setImage(UIImage(named:"ic_pause") ?? UIImage(), for: .normal)
         }else{
-            playButton.setImage(UIImage(named:"ic_play")!, for: .normal)
+            playButton.setImage(UIImage(named:"ic_play") ?? UIImage(), for: .normal)
         }
     }
     

@@ -11,10 +11,8 @@ import DXVideoPlay
 
 class ViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-     
-        
+
+    @IBAction func play(_ sender: UIButton) {
         let videoMP4Source480p = VideoSource(sourceTitel: "480p", sourceVideo: URL(string: "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4")!)
         let videoMP4Source720p = VideoSource(sourceTitel: "720p", sourceVideo: URL(string: "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4")!)
         let subtitleSRTSource = URL(string: "https://raw.githubusercontent.com/nick-vanpraet/subtitles-test/master/D20/FHSY/e01.srt")!
@@ -30,6 +28,5 @@ class ViewController: UIViewController {
         
         present(dxPlayer, animated: true, completion: nil)
     }
-
-
+    
 }

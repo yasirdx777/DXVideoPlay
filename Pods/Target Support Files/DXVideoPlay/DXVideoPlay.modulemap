@@ -1,0 +1,6 @@
+framework module DXVideoPlay {
+  umbrella header "DXVideoPlay-umbrella.h"
+
+  export *
+  module * { export * }
+}
