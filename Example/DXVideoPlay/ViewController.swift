@@ -19,7 +19,7 @@ class ViewController: UIViewController {
         
         
         let assetItemOne = AssetItem(id: 0, itemTitle: "Clip 1", itemSubtitle: subtitleSRTSource, itemVideoSources: [videoMP4Source480p, videoMP4Source720p])
-        let assetItemTwo = AssetItem(id: 0, itemTitle: "Clip 1", itemSubtitle: subtitleSRTSource, itemVideoSources: [videoMP4Source480p, videoMP4Source720p])
+        let assetItemTwo = AssetItem(id: 1, itemTitle: "Clip 2", itemSubtitle: subtitleSRTSource, itemVideoSources: [videoMP4Source480p, videoMP4Source720p])
         
         
         let model = DXPlayerModel(id: 101, assetItems: [assetItemOne, assetItemTwo])

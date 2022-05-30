@@ -1,9 +1,9 @@
 //
-//  ViewController.swift
-//  weeanaiOSPlayer
+//  DXVideoPlay.swift
+//  Yasir N.Ramaya
 //
 //  Created by Yasir N.Ramaya on 7/1/20.
-//  Copyright © 2020 qi. All rights reserved.
+//  Copyright © 2020 Yasir N.Ramaya. All rights reserved.
 //
 
 import UIKit
@@ -122,11 +122,9 @@ public class DXVideoPlay: UIViewController, DXPlayerViewControllerProtocol {
     @objc func handleTap(_ sender: UITapGestureRecognizer? = nil) {
         if playerViewControll?.isHidden == false {
             playerViewControll?.isHidden = true
-            
             stopTimer()
         }else{
             playerViewControll?.isHidden = false
-            
             createTimer()
         }
     }

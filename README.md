@@ -5,6 +5,16 @@
 [![License](https://img.shields.io/cocoapods/l/DXVideoPlay.svg?style=flat)](https://cocoapods.org/pods/DXVideoPlay)
 [![Platform](https://img.shields.io/cocoapods/p/DXVideoPlay.svg?style=flat)](https://cocoapods.org/pods/DXVideoPlay)
 
+## Features
+
+- Support HLS, MP4
+- Support playlist
+- Support SRT subtitle
+- Subtitle controll
+- Support multi quality video source
+
+![alt text](https://raw.githubusercontent.com/yasirdx777/DXVideoPlay/Example/DXVideoPlay/preview.mov)
+
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
@@ -36,7 +46,7 @@ let subtitleSRTSource = URL(string: "https://raw.githubusercontent.com/nick-vanp
         
         
 let assetItemOne = AssetItem(id: 0, itemTitle: "Clip 1", itemSubtitle: subtitleSRTSource, itemVideoSources: [videoMP4Source480p, videoMP4Source720p])
-let assetItemTwo = AssetItem(id: 0, itemTitle: "Clip 1", itemSubtitle: subtitleSRTSource, itemVideoSources: [videoMP4Source480p, videoMP4Source720p])
+let assetItemTwo = AssetItem(id: 0, itemTitle: "Clip 2", itemSubtitle: subtitleSRTSource, itemVideoSources: [videoMP4Source480p, videoMP4Source720p])
         
         
 let model = DXPlayerModel(id: 101, assetItems: [assetItemOne, assetItemTwo])

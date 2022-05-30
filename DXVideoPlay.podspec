@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'DXVideoPlay'
-  s.version          = '1.0.2'
+  s.version          = '1.0.4'
   s.summary          = 'DXVideoPlay It is a complete video player that supports playlist, subtitles..etc'
   
 
@@ -19,7 +19,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-  'DXVideoPlay It is a complete video player that supports playlist, subtitles..etc, And you can integrate it easily with your app by supplying the DXVideoPlay VC with DXPlayerModel struct which you need to set the needed data for playlist asset items then just present DXVideoPlay VC and you are set to go.'
+  'DXVideoPlay It is a complete video player that supports playlist, subtitles..etc, And you can integrate it easily with your app by supplying the DXVideoPlay VC with DXPlayerModel which you need to set the needed data for playlist asset items then just present DXVideoPlay VC and you are set to go.'
                        DESC
 
   s.homepage         = 'https://github.com/yasirdx777/DXVideoPlay'
@@ -30,11 +30,11 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '11.0'
 
-  s.source_files = 'Classes/**/*.swift'
+  s.source_files = 'Classes/**/*.*'
   
-#  s.resource_bundles = {
-#      'DXVideoPlay' => ['DXVideoPlay/Assets/*']
-#  }
+  s.resource_bundles = {
+      'DXVideoPlay' => ['Assets.xcassets']
+  }
   
   s.swift_version = '5.0'
   

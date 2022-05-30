@@ -1,9 +1,9 @@
 //
 //  Subtitles.swift
-//  weeanaiOSPlayer
+//  Yasir N.Ramaya
 //
 //  Created by Yasir N.Ramaya on 7/26/20.
-//  Copyright © 2020 qi. All rights reserved.
+//  Copyright © 2020 Yasir N.Ramaya. All rights reserved.
 //
 
 import ObjectiveC
@@ -174,23 +174,21 @@ private struct AssociatedKeys {
 
 extension DXPlayer {
     
-    // MARK: - Public properties
     var subtitleLabel: UILabel? {
         get { return objc_getAssociatedObject(self, &AssociatedKeys.SubtitleKey) as? UILabel }
         set (value) { objc_setAssociatedObject(self, &AssociatedKeys.SubtitleKey, value, objc_AssociationPolicy.OBJC_ASSOCIATION_RETAIN_NONATOMIC) }
     }
     
-    // MARK: - Private properties
-    fileprivate var subtitleLabelHeightConstraint: NSLayoutConstraint? {
+    var subtitleLabelHeightConstraint: NSLayoutConstraint? {
         get { return objc_getAssociatedObject(self, &AssociatedKeys.SubtitleHeightKey) as? NSLayoutConstraint }
         set (value) { objc_setAssociatedObject(self, &AssociatedKeys.SubtitleHeightKey, value, objc_AssociationPolicy.OBJC_ASSOCIATION_RETAIN_NONATOMIC) }
     }
-    fileprivate var parsedPayload: NSDictionary? {
+    
+    var parsedPayload: NSDictionary? {
         get { return objc_getAssociatedObject(self, &AssociatedKeys.PayloadKey) as? NSDictionary }
         set (value) { objc_setAssociatedObject(self, &AssociatedKeys.PayloadKey, value, objc_AssociationPolicy.OBJC_ASSOCIATION_RETAIN_NONATOMIC) }
     }
     
-    // MARK: - Public methods
     func addSubtitles() -> Self {
         
         // Create label
@@ -348,7 +346,7 @@ extension DXPlayer {
     }
     
     
-    fileprivate func addSubtitleLabel() {
+    func addSubtitleLabel() {
         
         guard let _ = subtitleLabel else {
             
@@ -370,19 +368,34 @@ extension DXPlayer {
             subtitleLabel?.lineBreakMode = .byWordWrapping
             self.addSubview(subtitleLabel!)
             
+            
+            
             // Position
-            var constraints = NSLayoutConstraint.constraints(withVisualFormat: "H:|-(20)-[l]-(20)-|", options: NSLayoutConstraint.FormatOptions(rawValue: 0), metrics: nil, views: ["l" : subtitleLabel!])
-            self.addConstraints(constraints)
-            constraints = NSLayoutConstraint.constraints(withVisualFormat: "V:[l]-(30)-|", options: NSLayoutConstraint.FormatOptions(rawValue: 0), metrics: nil, views: ["l" : subtitleLabel!])
-            self.addConstraints(constraints)
-            subtitleLabelHeightConstraint = NSLayoutConstraint(item: subtitleLabel!, attribute: .height, relatedBy: .equal, toItem: nil, attribute: NSLayoutConstraint.Attribute.notAnAttribute, multiplier: 1.0, constant: 30.0)
-            self.addConstraint(subtitleLabelHeightConstraint!)
+            subtitleLabel?.snp.makeConstraints({ make in
+                make.bottom.equalToSuperview().inset(60)
+                make.left.right.equalToSuperview().inset(20)
+            })
+            
             
             return
             
         }
         
     }
+    
+    func shiftSubtitlePositionUp(){
+        subtitleLabel?.snp.updateConstraints({ make in
+            make.bottom.equalToSuperview().inset(60)
+        })
+    }
+    
+    func resetSubitlePosition(){
+        subtitleLabel?.snp.updateConstraints({ make in
+            make.bottom.equalToSuperview().inset(30)
+        })
+    }
+    
+    
     
 }
 
@@ -457,7 +470,7 @@ extension DXPlayer {
 
 
 
-public extension AVPlayerViewController {
+extension AVPlayerViewController {
     
     // MARK: - Public properties
     var subtitleLabel: UILabel? {
@@ -565,7 +578,7 @@ public extension AVPlayerViewController {
     }
     
     
-    fileprivate func addSubtitleLabel() {
+    func addSubtitleLabel() {
         
         guard let _ = subtitleLabel else {
             
@@ -592,7 +605,7 @@ public extension AVPlayerViewController {
             contentOverlayView?.addConstraints(constraints)
             constraints = NSLayoutConstraint.constraints(withVisualFormat: "V:[l]-(30)-|", options: NSLayoutConstraint.FormatOptions(rawValue: 0), metrics: nil, views: ["l" : subtitleLabel!])
             contentOverlayView?.addConstraints(constraints)
-            subtitleLabelHeightConstraint = NSLayoutConstraint(item: subtitleLabel!, attribute: .height, relatedBy: .equal, toItem: nil, attribute: NSLayoutConstraint.Attribute.notAnAttribute, multiplier: 1.0, constant: 30.0)
+            subtitleLabelHeightConstraint = NSLayoutConstraint(item: subtitleLabel!, attribute: .height, relatedBy: .equal, toItem: nil, attribute: NSLayoutConstraint.Attribute.notAnAttribute, multiplier: 1.0, constant: 60.0)
             contentOverlayView?.addConstraint(subtitleLabelHeightConstraint!)
             
             return

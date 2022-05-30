@@ -1,10 +1,10 @@
 
 //
 //  PlayerLayer.swift
-//  weeanaiOSPlayer
+//  Yasir N.Ramaya
 //
 //  Created by Yasir N.Ramaya on 7/7/20.
-//  Copyright © 2020 qi. All rights reserved.
+//  Copyright © 2020 Yasir N.Ramaya. All rights reserved.
 //
 
 import Foundation
@@ -13,8 +13,7 @@ class Utils {
     
     static func myBundle() -> Bundle? {
         let bundle = Bundle(for: Self.self)
-        let path = bundle.path(forResource: "Bundle", ofType: "bundle")
-        print(path ?? "nil")
+        let path = bundle.path(forResource: "DXVideoPlay", ofType: "bundle")
         return Bundle(path: path ?? "")
     }
 
