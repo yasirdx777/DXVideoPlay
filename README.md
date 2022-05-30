@@ -8,12 +8,14 @@
 ## Features
 
 - Support HLS, MP4
+- Support multi quality video source
 - Support playlist
 - Support SRT subtitle
-- Subtitle controll
-- Support multi quality video source
+- Subtitle control
 
-![alt text](https://raw.githubusercontent.com/yasirdx777/DXVideoPlay/Example/DXVideoPlay/preview.mov)
+
+![alt text](https://raw.githubusercontent.com/yasirdx777/square_progress_bar/main/Example/DXVideoPlay/preview.gif)
+
 
 ## Example
 
