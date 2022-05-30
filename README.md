@@ -14,7 +14,7 @@
 - Subtitle control
 
 
-![alt text](https://raw.githubusercontent.com/yasirdx777/square_progress_bar/main/Example/DXVideoPlay/preview.gif)
+![alt text](https://raw.githubusercontent.com/yasirdx777/DXVideoPlay/1.0.6/Example/DXVideoPlay/preview.gif)
 
 
 ## Example
