@@ -12,6 +12,7 @@
 - Support playlist
 - Support SRT subtitle
 - Subtitle control
+- Save selected clip and last watching position 
 
 
 ![alt text](https://raw.githubusercontent.com/yasirdx777/DXVideoPlay/1.0.6/Example/DXVideoPlay/preview.gif)
@@ -48,7 +49,7 @@ let subtitleSRTSource = URL(string: "https://raw.githubusercontent.com/nick-vanp
         
         
 let assetItemOne = AssetItem(id: 0, itemTitle: "Clip 1", itemSubtitle: subtitleSRTSource, itemVideoSources: [videoMP4Source480p, videoMP4Source720p])
-let assetItemTwo = AssetItem(id: 0, itemTitle: "Clip 2", itemSubtitle: subtitleSRTSource, itemVideoSources: [videoMP4Source480p, videoMP4Source720p])
+let assetItemTwo = AssetItem(id: 1, itemTitle: "Clip 2", itemSubtitle: subtitleSRTSource, itemVideoSources: [videoMP4Source480p, videoMP4Source720p])
         
         
 let model = DXPlayerModel(id: 101, assetItems: [assetItemOne, assetItemTwo])

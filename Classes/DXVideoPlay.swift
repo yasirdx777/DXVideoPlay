@@ -31,6 +31,10 @@ public class DXVideoPlay: UIViewController, DXPlayerViewControllerProtocol {
     
     public override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if #available(iOS 13.0, *) {
+            overrideUserInterfaceStyle = .dark
+        }
 
         setupPlayerView()
         connectPlayerViews()
@@ -42,6 +46,7 @@ public class DXVideoPlay: UIViewController, DXPlayerViewControllerProtocol {
 
         createTimer()
         
+
     }
     
     

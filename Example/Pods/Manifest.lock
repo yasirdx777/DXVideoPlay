@@ -1,5 +1,5 @@
 PODS:
-  - DXVideoPlay (1.0.6):
+  - DXVideoPlay (1.0.7):
     - SnapKit
   - SnapKit (4.2.0)
 
@@ -15,7 +15,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  DXVideoPlay: 0c5c15131ccc1ed0105c864644344e8f56be60cc
+  DXVideoPlay: 1ee3e71bddd7ca6207955a01a78319a29663fbf3
   SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
 
 PODFILE CHECKSUM: e527a2d300a98b42d1045f6b70585bfd0a61b637
